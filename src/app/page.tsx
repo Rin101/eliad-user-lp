@@ -53,14 +53,17 @@ export default function Home() {
       </section>
       <section id="points" className={styles.points}>
         <div className={styles.point}>
+          <h2 className={styles.pointBigHeading}>相談できる人がいない！</h2>
           <h3 className={styles.pointHeading}>仕事のモヤモヤ、悩みを<br/>プロのビジネスマンに相談する</h3>
           <p className={styles.pointContent}>これまでの仕事の悩みは、友達、恋人、職場の先輩や同期・・と一部の限られていた人だけ。<br/>ここでは、質問や相談をすると、社長や役員をはじめとする、様々なビジネスマンが解決のヒントをくれるプラットホームです。</p>
         </div>
         <div className={styles.point}>
+          <h2 className={styles.pointBigHeading}>転職活動は意見交換しながら、ゆっくり探したい！</h2>
           <h3 className={styles.pointHeading}>仕事や起業に活かせる情報収集</h3>
           <p className={styles.pointContent}>市場開拓におけるその業種ならではの実態、カルチャーや、あらゆる情報不足にその業種のプロがヒントをくれます。</p>
         </div>
         <div className={styles.point}>
+          <h2 className={styles.pointBigHeading}>あの業界って実際、どうなの？</h2>
           <h3 className={styles.pointHeading}>新しい転職のカタチとして。</h3>
           <p className={styles.pointContent}>転職サイトに登録して紹介される求人を辿る転職から、
             <br/>相談や意見交換を通じて、様々な人と繋がり、
