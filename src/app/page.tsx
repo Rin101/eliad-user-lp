@@ -24,7 +24,8 @@ export default function Home() {
               <h1>エリアド！</h1>
             </div>
             <div className={styles.linkContainer}>
-              <Link href={formLink} className={styles.headerLink1}>質問する</Link>
+              <a href={formLink} target='_blank' className={styles.headerLink1}>質問する</a>
+              {/* <Link href={formLink} className={styles.headerLink1}>質問する</Link> */}
               {/* <Link href={"/"}>みんなの回答をみる</Link> */}
               <Link href={"/"}>回答をみる</Link>
             </div>
@@ -32,11 +33,14 @@ export default function Home() {
           <div className={styles.topContent}>
             <h1 className={styles.topText}>仕事の悩み、<br/>エリートな<br/>ビジネスマンに<br/>聞いてみよう。</h1>
             {/* <h1 className={styles.topText}>仕事の悩み、<br/>プロのビジネスマンに<br/>聞いてみよう。</h1> */}
-            <Link href={formLink}>
+            <a href={formLink} target='_blank' className={`${styles.askButton} ${styles.topButton}`}>
+              <p>今すぐ無料で質問する</p>
+            </a>
+            {/* <Link href={formLink}>
               <div className={`${styles.askButton} ${styles.topButton}`}>
                 <p>今すぐ無料で質問する</p>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
