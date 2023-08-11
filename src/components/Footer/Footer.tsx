@@ -9,7 +9,7 @@ export default function Footer() {
                     <h2 className={styles.footerLogo}>エリアド - ELIAD</h2>
                 </Link>
             </div>
-            <div className={styles.footerLinks}>
+            {/* <div className={styles.footerLinks}>
                 <Link href="/">
                     <p>エリアドとは</p>
                 </Link>
@@ -22,7 +22,7 @@ export default function Footer() {
                 <Link href="/company/">
                     <p>運営会社</p>
                 </Link>
-            </div>
+            </div> */}
             <p className={styles.copyright}>©︎Metarmo-メタルモ 2023</p>
         </section>
     )

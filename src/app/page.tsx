@@ -13,40 +13,43 @@ export default function Home() {
     <main>
       <section id="top" className={styles.top}>
         <img className={styles.bgImg} src="/img/white-bg.jpg" alt="" />
-        <div className={styles.topContent}>
-          <h1 className={styles.topText}>仕事の悩み、<br/>プロのビジネスマンに<br/>聞いてみよう。</h1>
-          <div className={styles.topButtons}>
+        <div className={styles.topContainer}>
+          <div className={styles.header}>
+            <div className={styles.logoContainer}>
+              <p>キャリアQAサイトなら</p>
+              <h1>エリアド！</h1>
+            </div>
+            <div className={styles.linkContainer}>
+              <Link href={"/"} className={styles.headerLink1}>質問する</Link>
+              {/* <Link href={"/"}>みんなの回答をみる</Link> */}
+              <Link href={"/"}>回答をみる</Link>
+            </div>
+          </div>
+          <div className={styles.topContent}>
+            <h1 className={styles.topText}>仕事の悩み、<br/>プロのビジネスマンに<br/>聞いてみよう。</h1>
+            {/* <h1 className={styles.topText}>仕事の悩み、<br/>プロのビジネスマンに<br/>聞いてみよう。</h1> */}
             <Link href="#form">
               <div className={`${styles.askButton} ${styles.topButton}`}>
-                <p>質問する</p>
+                <p>今すぐ無料で質問する</p>
               </div>
             </Link>
-            <p className={styles.askButtonText}>下のフォームに<br/>質問を入力！</p>
           </div>
         </div>
       </section>
       <section id="bubble" className={styles.bubble}>
-        <h2>仕事の悩み相談・解決QAサイト</h2>
+        <h2>エリアドは<br/>仕事の悩み相談・解決QAサイトです</h2>
         <div className={styles.chatBubbles}>
           <div className={styles.chatBubbleContainer}>
-            <div className={`${styles.chatBubble} ${styles.chatBubble1}`}>
-              <p className={styles.chatHeading}>無料で仕事の悩みを解決</p>
-              <p className={styles.chatContent}>Metarmo（メタルモ）は、完全無料で利用するサービスです</p>
-            </div>
-            <div className={styles.chatSpacer}></div>
-          </div>
-          <div className={styles.chatBubbleContainer}>
-            <div className={styles.chatSpacer}></div>
             <div className={`${styles.chatBubble} ${styles.chatBubble2}`}>
-              <p className={styles.chatHeading}>クオリティーの高い回答</p>
-              <p className={styles.chatContent}>多方面の業界から、高水準な回答をいただいています</p>
+              <Link href={"/examples/"}>
+                  <div className={styles.seeExamples}>
+                    <p>回答例を見る</p>
+                    <FaChevronRight />
+                  </div>
+                </Link>
             </div>
           </div>
         </div>
-        <a href="./examples/" className={styles.seeExamples}>
-          <p>回答例を見る</p>
-          <FaChevronRight />
-        </a>
       </section>
       <section id="points" className={styles.points}>
         <div className={styles.point}>
@@ -65,9 +68,9 @@ export default function Home() {
             <br/>新しい転職活動がここでなら可能です。</p>
         </div>
       </section>
-      <section id="form" className={styles.form}>
+      {/* <section id="form" className={styles.form}>
         <iframe className={styles.formContent} src="https://docs.google.com/forms/d/e/1FAIpQLScyOL4k2G9aHbkc6n1wUHkIkTOn_Rm4mgS8cKyfT8-xHo8YAQ/viewform?embedded=true" width="640" height="1100">読み込んでいます…</iframe>
-      </section>
+      </section> */}
     </main>
   )
 }
