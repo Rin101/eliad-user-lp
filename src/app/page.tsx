@@ -57,13 +57,13 @@ export default function Home() {
       </section>
       <section id="points" className={styles.points}>
         <div className={styles.point}>
-          <Image src={"/img/alone.jpg"} height={800} width={800} alt={"group-chat"} />
           {/* <Image src={"/img/group-chat.jpg"} height={800} width={800} alt={"group-chat"} /> */}
           <div className={styles.pointTextContainer}>
             <h2 className={styles.pointBigHeading}>相談できる人がいない！</h2>
             <h3 className={styles.pointHeading}>仕事のモヤモヤ、悩みを<br/>プロのビジネスマンに相談する</h3>
             <p className={styles.pointContent}>これまでの仕事の悩みは、友達、恋人、職場の先輩や同期・・と一部の限られていた人だけ。<br/>ここでは、質問や相談をすると、社長や役員をはじめとする、様々なビジネスマンが解決のヒントをくれるプラットホームです。</p>
           </div>
+          <Image src={"/img/alone.jpg"} height={800} width={800} alt={"group-chat"} />
         </div>
         <div className={styles.point}>
           <Image src={"/img/chat.jpg"} height={800} width={800} alt={"group-chat"} />
@@ -74,7 +74,6 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.point}>
-          <Image src={"/img/startup.jpg"} height={800} width={800} alt={"group-chat"} />
           <div className={styles.pointTextContainer}>
             <h2 className={styles.pointBigHeading}>あの業界って実際、どうなの？</h2>
             <h3 className={styles.pointHeading}>新しい転職のカタチとして。</h3>
@@ -83,7 +82,8 @@ export default function Home() {
               <br/>より信頼できる人と一緒に働く、
               <br/>新しい転職活動がここでなら可能です。</p>
           </div>
-          </div>
+          <Image src={"/img/startup.jpg"} height={800} width={800} alt={"group-chat"} />
+        </div>
       </section>
     </main>
   )
