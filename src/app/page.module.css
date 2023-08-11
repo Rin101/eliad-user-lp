@@ -65,7 +65,10 @@
 
 .topText {
   font-size: 30px;
-  color: #40435E;
+  /* color: #363a36; */
+  /* color: #1f471f; */
+  color: #405e49;
+  /* color: #40435E; */
 }
 
 .topButton {
@@ -84,7 +87,7 @@
 
 .askButton {
   color: white;
-  background: linear-gradient(to right, #7DB0FC, #095FC5);
+  background: linear-gradient(to right, #36C233, #0D940A);
   margin-bottom: 20px;
 }
 
@@ -143,7 +146,9 @@
 .bubble h2 {
   font-weight: 600;
   font-size: 15px;
-  color: #696679;
+  /* color: #266b35; */
+  color: #66796d;
+  /* color: #696679; */
   padding: 40px 0 30px 0;
 }
 
@@ -194,7 +199,9 @@
 .seeExamples {
   display: flex;
   align-items: center;
-  color: #696679;
+  /* color: #266b35; */
+  color: #66796d;
+  /* color: #696679; */
 }
 
 .seeExamples p {
@@ -235,7 +242,8 @@
 
 .pointBigHeading {
   font-size: 24px;
-  color: #50526a;
+  color: #506a56;
+  /* color: #50526a; */
   margin-bottom: 28px;
 }
 
