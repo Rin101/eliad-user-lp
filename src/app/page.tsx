@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+
+  const formLink = "https://docs.google.com/forms/d/e/1FAIpQLScyOL4k2G9aHbkc6n1wUHkIkTOn_Rm4mgS8cKyfT8-xHo8YAQ/viewform?usp=sf_link"
+
   return (
     <main>
       <section id="top" className={styles.top}>
@@ -21,7 +24,7 @@ export default function Home() {
               <h1>エリアド！</h1>
             </div>
             <div className={styles.linkContainer}>
-              <Link href={"/"} className={styles.headerLink1}>質問する</Link>
+              <Link href={formLink} className={styles.headerLink1}>質問する</Link>
               {/* <Link href={"/"}>みんなの回答をみる</Link> */}
               <Link href={"/"}>回答をみる</Link>
             </div>
@@ -29,7 +32,7 @@ export default function Home() {
           <div className={styles.topContent}>
             <h1 className={styles.topText}>仕事の悩み、<br/>エリートな<br/>ビジネスマンに<br/>聞いてみよう。</h1>
             {/* <h1 className={styles.topText}>仕事の悩み、<br/>プロのビジネスマンに<br/>聞いてみよう。</h1> */}
-            <Link href="#form">
+            <Link href={formLink}>
               <div className={`${styles.askButton} ${styles.topButton}`}>
                 <p>今すぐ無料で質問する</p>
               </div>
@@ -82,9 +85,6 @@ export default function Home() {
           </div>
           </div>
       </section>
-      {/* <section id="form" className={styles.form}>
-        <iframe className={styles.formContent} src="https://docs.google.com/forms/d/e/1FAIpQLScyOL4k2G9aHbkc6n1wUHkIkTOn_Rm4mgS8cKyfT8-xHo8YAQ/viewform?embedded=true" width="640" height="1100">読み込んでいます…</iframe>
-      </section> */}
     </main>
   )
 }
